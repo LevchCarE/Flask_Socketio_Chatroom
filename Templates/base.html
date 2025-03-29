@@ -1,0 +1,20 @@
+# base.html is the base template that will act as a generic style for the entire website
+# it will contain the header, footer, and other common elements that will be used in the other templates
+#other templates will inherit from this base template and will add their own content
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Chat App</title>
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/4.0.1/socket.io.js" 
+        integrity="sha512-q/dWJ3kcmjBLU4Qc47E4A9kTB4m3wuTY7vkFJDTZKjTs8jhyGQnaUrxa0Ytd0ssMZhbNua9hE+E7Qv1j+DyZwA==" 
+        crossorigin="anonymous"></script>
+
+    </head>
+    <body>
+        <div class="content">{% block content %}{% endblock %}</div>
+    </body>
+
+</html>

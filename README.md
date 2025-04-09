@@ -1,3 +1,4 @@
 # Flask_Socketio_Chatroom
-Simple chatroom with flask and socket io
+intermidate, yet simple (fiew CSS) 
+chatroom with flask and socket io
 
